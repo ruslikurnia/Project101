@@ -698,6 +698,11 @@ footer .credit a {
     font-size: 1.5rem;
   }
 
+  .catalog .row .catalog-card .catalog-icon a {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+
   .contact .row {
     flex-wrap: wrap;
   }
@@ -712,6 +717,21 @@ footer .credit a {
 
   .modal-content {
     flex-wrap: wrap;
+  }
+
+  .modal-content img {
+    position: relative;
+    margin: 3rem auto;
+    height: 25rem;
+  }
+
+  .modal-content a {
+    width: 14.8rem;
+  }
+
+  .modal-content a span {
+    font-size: 1.3rem;
+    padding: 3px 0;
   }
 }
 /* Mobile */
