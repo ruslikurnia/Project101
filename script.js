@@ -43,7 +43,7 @@ document.addEventListener("click", function (e) {
   }
 });
 
-// Modal Box
+// Modal Box 1
 const itemDetailModal = document.querySelector("#item-detail-modal");
 const itemDetailButton = document.querySelectorAll(".info-button");
 
