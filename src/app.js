@@ -75,3 +75,33 @@ const rupiah = (number) => {
     minimumFractionDigits: 0,
   }).format(number);
 };
+
+// Modal box
+document.addEventListener("alpine:init", () => {
+  Alpine.data("modalBox", () => ({
+    items: [
+      { id: 1, name: "Catalog 1", img: "cat1.jpg", price: 365000 },
+      { id: 2, name: "Catalog 2", img: "cat2.jpg", price: 405000 },
+      { id: 3, name: "Catalog 3", img: "cat3.jpg", price: 699000 },
+      { id: 4, name: "Catalog 4", img: "cat4.jpg", price: 388000 },
+    ],
+    showModal(id) {
+      // Close any currently open modal
+      const openModal = document.querySelector('.modal[style*="display: block"]');
+      if (openModal) {
+        openModal.style.display = 'none';
+      }
+      // Show the new modal
+      const modal = document.getElementById(`modal-${id}`);
+      if (modal) {
+        modal.style.display = 'block';
+      }
+    },
+    closeModal(id) {
+      const modal = document.getElementById(`modal-${id}`);
+      if (modal) {
+        modal.style.display = 'none';
+      }
+    }
+  }));
+});

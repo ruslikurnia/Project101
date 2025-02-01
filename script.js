@@ -43,25 +43,3 @@ document.addEventListener("click", function (e) {
   }
 });
 
-// Modal Box 1
-const itemDetailModal = document.querySelector("#item-detail-modal");
-const itemDetailButton = document.querySelectorAll(".info-button");
-
-itemDetailButton.forEach((btn) => {
-  btn.onclick = (e) => {
-    itemDetailModal.style.display = "flex";
-    e.preventDefault();
-  };
-});
-
-// Close Onclick
-document.querySelector(".modal .close-icon").onclick = (e) => {
-  itemDetailModal.style.display = "none";
-  e.preventDefault();
-};
-
-window.onclick = (e) => {
-  if (e.target === itemDetailModal) {
-    itemDetailModal.style.display = "none";
-  }
-};
