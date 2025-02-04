@@ -5,6 +5,8 @@ document.addEventListener("alpine:init", () => {
       { id: 2, name: "Catalog 2", img: "cat2.jpg", price: 405000 },
       { id: 3, name: "Catalog 3", img: "cat3.jpg", price: 699000 },
       { id: 4, name: "Catalog 4", img: "cat4.jpg", price: 388000 },
+      { id: 5, name: "Catalog 5", img: "cat5.jpg", price: 400000 },
+      
     ],
   }));
 
@@ -84,6 +86,7 @@ document.addEventListener("alpine:init", () => {
       { id: 2, name: "Catalog 2", img: "cat2.jpg", price: 405000 },
       { id: 3, name: "Catalog 3", img: "cat3.jpg", price: 699000 },
       { id: 4, name: "Catalog 4", img: "cat4.jpg", price: 388000 },
+      { id: 5, name: "Catalog 5", img: "cat5.jpg", price: 400000 },
     ],
     showModal(id) {
       // Close any currently open modal
